@@ -9,15 +9,23 @@ $app->get('/', function () use ($app) {
     echo $app['response']->encode("api home");
 });
 
+
+
 /**
  * Not found handler
  */
 $app->notFound(function () use ($app) {
 	$app->response->setStatusCode(404, "Not Found")->sendHeaders();
-	echo "ll";
+    echo $app['response']->encode("404");
 });
 
 
+
+
+$app->get("/status",function() use ($app) {
+    $list = $app['roles']->getAvailableList();
+    echo $app['response']->encode($list);
+});
 
 
 // TODO automate this step from a config file/or something dependant on the minion

@@ -38,4 +38,16 @@ class RoleCollection extends \ArrayObject implements \Phalcon\DI\InjectionAwareI
         return $this->di;
     }
 
+    public function getAvailableList(){
+
+        $array=array();
+
+        foreach($this as $roleName=>$role){
+            $array[]=$roleName;
+        }
+
+        return $array;
+
+    }
+
 }
