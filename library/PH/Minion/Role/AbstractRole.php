@@ -11,13 +11,6 @@ namespace PH\Minion\Role;
  */
 abstract class AbstractRole extends \Phalcon\Mvc\Micro\Collection {
 
-    /**
-     * @var
-     */
-    protected $app;
-
-
-
 
     /**
      * aims to build the routes that will be added to the application
