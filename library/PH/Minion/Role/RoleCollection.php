@@ -3,7 +3,7 @@
 namespace PH\Minion\Role;
 
 
-class RoleBag extends \ArrayObject implements \Phalcon\DI\InjectionAwareInterface {
+class RoleCollection extends \ArrayObject implements \Phalcon\DI\InjectionAwareInterface {
 
     protected $di;
 

@@ -41,5 +41,5 @@ $di['db'] = function() use ($config) {
  * add the rolebag to the application
  */
 $di['roles'] = function() use ($config) {
-    return new \PH\Minion\Role\RoleBag();
+    return new \PH\Minion\Role\RoleCollection();
 };
