@@ -14,7 +14,7 @@ class WebServerController extends \Phalcon\Mvc\Controller {
 
     public function addUser(){
         // launch queue
-        echo $this->di->get("response")->encode("Queued");
+        return "webserver : Queued";
     }
 
 }

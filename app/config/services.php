@@ -2,13 +2,12 @@
 
 use Phalcon\Mvc\View,
 	Phalcon\Mvc\Url as UrlResolver,
-	Phalcon\DI\FactoryDefault,
-	Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
+	Phalcon\DI\FactoryDefault;
 
 $di = new FactoryDefault();
 
 /**
- * Sets the view component
+ * Sets the response handler
  */
 $di['response'] = function() use ($config) {
 
@@ -25,17 +24,7 @@ $di['url'] = function() use ($config) {
 	return $url;
 };
 
-/**
- * Database connection is created based in the parameters defined in the configuration file
- */
-$di['db'] = function() use ($config) {
-	return new DbAdapter(array(
-		"host" => $config->database->host,
-		"username" => $config->database->username,
-		"password" => $config->database->password,
-		"dbname" => $config->database->dbname
-	));
-};
+
 
 /**
  * add the rolebag to the application
