@@ -1,0 +1,18 @@
+# phpstorm
+.idea*
+
+
+# netbeans
+/nbproject/
+/build/
+
+
+# composer
+/vendor/
+composer.lock
+composer.phar
+
+
+# mac
+.Trashes
+.DS_STORE
