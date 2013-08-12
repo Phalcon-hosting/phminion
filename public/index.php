@@ -1,4 +1,11 @@
 <?php
+/**
+ * @author Soufiane Ghzal
+ * @copyright PhalconHosting
+ * @license This file is licensed under the proprietary License of PhalconHosting
+ * @namespace PH\Minion
+ */
+
 
 error_reporting(E_ALL);
 ini_set('display_errors',1);
