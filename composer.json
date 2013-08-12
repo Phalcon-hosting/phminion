@@ -15,5 +15,11 @@
             "name": "Ivo Stefanov",
             "email": "ivo@phalconhosting.com"
         }
-    ]
+    ],
+
+    "autoload": {
+        "psr-0" : {
+            "PH"    :   "app/library"
+        }
+    }
 }
