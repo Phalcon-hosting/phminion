@@ -21,7 +21,7 @@ In the config file you can add some roles. Each role matches with a server servi
 
 Example of ```config.php``` :
 
-```
+```php
 <?php
 
 use PH\Minion\Role;
