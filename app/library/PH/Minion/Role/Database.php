@@ -1,11 +1,11 @@
 <?php
 /**
- * Created by JetBrains PhpStorm.
- * User: bobito
- * Date: 8/11/13
- * Time: 5:36 PM
- * To change this template use File | Settings | File Templates.
+ * @author Soufiane Ghzal
+ * @copyright PhalconHosting
+ * @license This file is licensed under the proprietary License of PhalconHosting
+ * @namespace PH\Minion
  */
+
 
 namespace PH\Minion\Role;
 
