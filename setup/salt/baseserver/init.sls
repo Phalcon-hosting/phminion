@@ -17,21 +17,7 @@ basepackages:
       - automake
       - curl
       - rsync
-      - git
       - git-flow
-
-phalcon:
-  git.latest:
-      - name: https://github.com/phalcon/cphalcon.git
-      - rev: master
-      - runas: root
-      - target: /var/local/setup/cphalcon
-      - force: true
-  cmd.wait:
-   - name: sh install
-   - cwd: /var/local/setup/cphalcon/build
-   - watch:
-     - git: phalcon
 
 
 removepackages:
@@ -47,12 +33,3 @@ php5-cli:
         - user: www-data
         - group: www-data
         - mode: 755
-
-phalcon-ini:
-    file.managed:
-            - name: /etc/php5/conf.d/phalcon.ini
-            - source: salt://templates/php/conf.d/phalcon.ini
-            - template: jinja
-            - user: www-data
-            - group: www-data
-            - mode: 755

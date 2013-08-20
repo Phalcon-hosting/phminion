@@ -1,3 +1,5 @@
 base:
   '*':
+    - requirements
     - baseserver
+    - phalcon
