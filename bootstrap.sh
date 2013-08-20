@@ -27,3 +27,7 @@ sleep 1
 
 # bootstrap salt
 sudo sh ${DIR}/setup/salt.sh
+
+if [ -r /etc/php5/cli/php.ini ] ; then
+    php -i |grep phalcon
+fi

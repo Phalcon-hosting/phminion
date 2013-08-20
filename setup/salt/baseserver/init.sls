@@ -1,8 +1,6 @@
 basepackages:
-
   pkg.installed:
     - pkgs:
-      - nginx
       - htop
       - php5-cli
       - php5-dev
