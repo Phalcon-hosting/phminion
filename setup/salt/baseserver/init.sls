@@ -2,8 +2,6 @@ basepackages:
   pkg.installed:
     - pkgs:
       - htop
-      - php5-cli
-      - php5-dev
       - php5-mysql
       - php5-mcrypt
       - php5-memcached

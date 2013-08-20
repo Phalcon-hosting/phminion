@@ -7,6 +7,7 @@ phalcon:
       - force: true
       - require:
           - pkg: git
+          - pkg: php5-dev
   cmd.wait:
    - name: sh install
    - cwd: /var/local/setup/cphalcon/build
