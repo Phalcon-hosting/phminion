@@ -9,3 +9,4 @@ packages:
             - python-pip
             - php5-dev
             - php5-cli
+            - python-mysqldb

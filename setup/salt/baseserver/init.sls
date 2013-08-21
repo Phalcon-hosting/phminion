@@ -7,6 +7,11 @@ basepackages:
       - php5-memcached
       - php5-memcache
       - php5-curl
+      - php5-tidy
+      - php5-xmlrpc
+      - php5-xsl
+      - php5-intl
+      - php5-sqlite
       - nmap
       - unzip
       - make
